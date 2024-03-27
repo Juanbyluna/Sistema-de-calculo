@@ -11,6 +11,7 @@
 <body>
     <h1>Sistema de Calculo</h1><hr><br>
 <div class="container" id="name">
+<form method="get">
     <label for="inputaname" class="form-label"> Digite seu nome</label>
     <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
 </div><br><hr>
@@ -28,9 +29,43 @@
 <h2>Meta mesal</h2>
 <div class="conteiner" id="mes">
     <label for="inputaname" class="form-label">Mês:</label>
-    <input type="number" class="form-control" id="mês" placeholder="meta do mês"><br>
+    <input type="number" class="form-control" id="mes" placeholder="meta do mês"><br>
 </div><br><hr>
-<button class="onclick">Subir informações</button>
+<button name="botao"class="submit">Subir informações</button>
+</form>
+
+<?php
+if(isset($_GET['botao'])){
+$nome=$_GET['nome']; //array
+
+echo "olá $nome";
+
+$sem1=$_GET['semanaum'];
+
+$sem2=$_GET['semanadois'];
+
+$sem3=$_GET['semanatres'];
+
+$sem4=$_GET['semanaquatro'];
+
+$mensal=$_GET['mes'];
+
+$semanas=['$sem1,$sem2,$sem3,$sem4'];
+
+foreach ($semanas as $sem);
+if ($semanas > 21000) {
+    $sem1 + 210;
+    $sem2 + 210;
+    $sem3 + 210;
+    $sem4 + 210;
+
+echo "haverá bônus mensal";
+
+} else {
+echo "nao haverá bônus mensal";
+}
+}
+?>
 </body>
 </body>
 </html>

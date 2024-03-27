@@ -3,7 +3,7 @@ body{
 text-align: center;
 align-items: center;
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-background-color: rgb(107, 171, 255);
+background-color: rgb(255, 255, 255);
 
 }
 div{
@@ -19,4 +19,7 @@ input#nome {
 }
 button{
     border-radius: 5px;
+}
+h1{
+    font-style: rgb(255, 94, 0);
 }
