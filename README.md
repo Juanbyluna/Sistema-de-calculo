@@ -11,7 +11,7 @@ Possui uma Função para você informar seu nome, meta da semana e mensal.
 
 
 ### 🎨Tabela de cores
-
+ 💙 🤍 🩶
 
 
 ### 🤖Tecologias utilizadas
@@ -27,7 +27,10 @@ Possui uma Função para você informar seu nome, meta da semana e mensal.
 * Chat gpt
 * Google
 ## 🤜🤛Colaboradores
-* Leonardo Santiago Sidon da Rocha
+* Nathan Fabricio
+* Caio Estevão
+* Sarah Ozetto
+* João Vitor
 
 ## ✒️Autores
 Juan Fernandes Goes de Souza
