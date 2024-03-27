@@ -50,11 +50,11 @@ $mensal=$_GET['mes'];
 $semanas=['$sem1,$sem2,$sem3,$sem4'];
 
 foreach ($semanas as $sem);
-if ($semanas < 20000);
-    ($sem1 + 200)
-    ($sem2 + 200)
-    ($sem3 + 200)
-    ($sem4 + 200){
+if ($semanas < 21000);
+    ($sem1 + 210)
+    ($sem2 + 210)
+    ($sem3 + 210)
+    ($sem4 + 210){
 
 echo "haverá bônus mensal";
 
