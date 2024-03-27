@@ -28,9 +28,41 @@
 <h2>Meta mesal</h2>
 <div class="conteiner" id="mes">
     <label for="inputaname" class="form-label">Mês:</label>
-    <input type="number" class="form-control" id="mês" placeholder="meta do mês"><br>
+    <input type="number" class="form-control" id="mes" placeholder="meta do mês"><br>
 </div><br><hr>
-<button class="onclick">Subir informações</button>
+<button class="submit">Subir informações</button>
+
+<?php
+$nome=$_GET['nome'];
+
+echo "olá $nome"
+
+$sem1=$_GET['semanaum'];
+
+$sem2=$_GET['semanadois'];
+
+$sem3=$_GET['semanatres'];
+
+$sem4=$_GET['semanaquatro'];
+
+$mensal=$_GET['mes'];
+
+$semanas=['$sem1,$sem2,$sem3,$sem4'];
+
+foreach ($semanas as $sem);
+if ($semanas < 20000);
+    ($sem1 + 200)
+    ($sem2 + 200)
+    ($sem3 + 200)
+    ($sem4 + 200){
+
+echo "haverá bônus mensal";
+
+}else{
+echo "nao haverá bônus mensal";
+}
+
+?>
 </body>
 </body>
 </html>
