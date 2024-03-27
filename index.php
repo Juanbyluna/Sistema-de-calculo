@@ -11,84 +11,60 @@
 <body>
     <h1>Sistema de Calculo</h1><hr><br>
 <div class="container" id="name">
-<form method="get">
+    <form method="post">
     <label for="inputaname" class="form-label"> Digite seu nome</label>
-    <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+    <input type="text" class="form-control" name="nome" placeholder="Seu Nome">
 </div><br><hr>
     <h2>Metas Semanais</h2>
 <div class="conteiner" id="semana">
     <label for="inputaname" class="form-label"> 1°</label>
-    <input type="number" class="form-control" id="semanaum" placeholder="Primeira semana"><br>
+    <input type="number" class="form-control" name="semanaum" placeholder="Primeira semana"><br>
     <label for="inputaname" class="form-label"> 2°</label>
-    <input type="number" class="form-control" id="semanadois" placeholder="Segunda semana"><br>
+    <input type="number" class="form-control" name="semanadois" placeholder="Segunda semana"><br>
     <label for="inputaname" class="form-label"> 3°</label>
-    <input type="number" class="form-control" id="semanatres" placeholder="Terceira semana"><br>
+    <input type="number" class="form-control" name="semanatres" placeholder="Terceira semana"><br>
     <label for="inputaname" class="form-label"> 4°</label>
-    <input type="number" class="form-control" id="semanaquatro" placeholder="Quarta semana"><br>
+    <input type="number" class="form-control" name="semanaquatro" placeholder="Quarta semana"><br>
 </div><br><hr>
-<h2>Meta mesal</h2>
-<div class="conteiner" id="mes">
-    <label for="inputaname" class="form-label">Mês:</label>
-    <input type="number" class="form-control" id="mes" placeholder="meta do mês"><br>
-</div><br><hr>
-<<<<<<<< HEAD:index.php
-<button name="botao"class="submit">Subir informações</button>
+<input type="submit" value="Subir informações"><br>
 </form>
 
 <?php
-if(isset($_GET['botao'])){
-$nome=$_GET['nome']; //array
+$nome=filter_input(INPUT_POST, 'nome');
 
-echo "olá $nome";
-========
-<button class="submit">Subir informações</button>
+$sem1=filter_input(INPUT_POST, 'semanaum');
 
-<?php
-$nome=$_GET['nome'];
+$sem2=filter_input(INPUT_POST, 'semanadois');
 
-echo "olá $nome"
->>>>>>>> b371ce47c041eebcedee9a32abffc38ab74e5edf:index..php
+$sem3=filter_input(INPUT_POST, 'semanatres');
 
-$sem1=$_GET['semanaum'];
+$sem4=filter_input(INPUT_POST, 'semanaquatro');
 
-$sem2=$_GET['semanadois'];
+$mensal = $sem1 + $sem2 + $sem3 + $sem4;
 
-$sem3=$_GET['semanatres'];
+$salariomin= 1907.20;
 
-$sem4=$_GET['semanaquatro'];
+$metamensal = 80000;
 
-$mensal=$_GET['mes'];
+$bonusmensal = true;
 
-$semanas=['$sem1,$sem2,$sem3,$sem4'];
+$salariofinal = $salariomin;
 
-foreach ($semanas as $sem);
-<<<<<<<< HEAD:index.php
-if ($semanas > 21000) {
-    $sem1 + 210;
-    $sem2 + 210;
-    $sem3 + 210;
-    $sem4 + 210;
+$semanas=[$sem1,$sem2,$sem3,$sem4];
 
-echo "haverá bônus mensal";
+foreach ($semanas as $sem);{
+if ($sem < 20000){
+   $bonusmensal = false;
 
 } else {
-echo "nao haverá bônus mensal";
+    $salariofinal += 200;
+    $salariofinal += ($sem - 20000) * 0.05;
 }
-}
-========
-if ($semanas < 21000);
-    ($sem1 + 210)
-    ($sem2 + 210)
-    ($sem3 + 210)
-    ($sem4 + 210){
-
-echo "haverá bônus mensal";
-
-}else{
-echo "nao haverá bônus mensal";
+}if($bonusmensal){
+    $salariofinal += ($mensal - $metamensal) * 0.1;
 }
 
->>>>>>>> b371ce47c041eebcedee9a32abffc38ab74e5edf:index..php
+echo "Olá $nome. Seu salário será de $salariofinal";
 ?>
 </body>
 </body>

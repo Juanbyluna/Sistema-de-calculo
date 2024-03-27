@@ -1,8 +1,6 @@
 # Sistema de calculo
 Projeto criado em sala de aula com ajuda do Professor Leonardo Santiago Sidon da Rocha.
 
-## 🖼️Capa do Projeto
-<img src="imgs/Capa.png">
 
 ## 📄Descrição
 
@@ -10,8 +8,6 @@ Este projeto tem a função de adicionar cep, endereço, numero, bairro cidade e
 ## 👾Funcionalidades
 
 Possui uma Função para você informar seu nome, meta da semana e mensal.
-## 📸Como usar
-
 
 
 ### 🎨Tabela de cores
